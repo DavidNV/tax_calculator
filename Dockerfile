@@ -2,8 +2,10 @@
 
 FROM node:11.1-alpine as dev-stage
 WORKDIR /app
+RUN apk add curl
+RUN apk add vim
+RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | sh
 COPY package*.json ./
-RUN yarn install
 COPY . .
 
 # build stage

@@ -14,14 +14,16 @@ docker-compose up --build
 ```
 ## To Update depedencies
 
+```
 docker-compose exec frontend yarn add <package-name>
-> or
 
+or
 docker-compose run client sh
+
 (Inside container)
+
 $root@bfabb16523ce yarn add <package-name>
-
-
+```
 ```
 ## Ideas and gurus
 [https://medium.com/@jwdobken/vue-with-docker-initialize-develop-and-build-51fad21ad5e6](Vue with Docker)

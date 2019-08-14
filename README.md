@@ -24,8 +24,8 @@ docker-compose run client sh
 
 $root@bfabb16523ce yarn add <package-name>
 ```
-```
 ## Ideas and gurus
+
 [https://medium.com/@jwdobken/vue-with-docker-initialize-develop-and-build-51fad21ad5e6](Vue with Docker)
 [https://hinsencamp.com/article/vue-pwa/](Vue-PWA)
 

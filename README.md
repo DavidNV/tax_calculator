@@ -1,30 +1,33 @@
-# tax_calculator
+# Tax Calculator
 
 ## Project setup
+
+### Without compose
 ```
-yarn install
+Build: docker build -t tc-vue . 
+Run: docker run -it -p 8000:80 --rm dockerize-vue
 ```
 
-### Compiles and hot-reloads for development
+### With compose
 ```
-yarn run serve
+docker-compose up --build
 ```
+## To Update depedencies
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+docker-compose exec frontend yarn add <package-name>
+> or
 
-### Run your tests
+docker-compose run client sh
+(Inside container)
+$root@bfabb16523ce yarn add <package-name>
+
+
 ```
-yarn run test
-```
+## Ideas and gurus
+[https://medium.com/@jwdobken/vue-with-docker-initialize-develop-and-build-51fad21ad5e6](Vue with Docker)
+[https://hinsencamp.com/article/vue-pwa/](Vue-PWA)
 
 ### Lints and fixes files
 ```
 yarn run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# tax_calculator

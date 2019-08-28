@@ -5,7 +5,7 @@
 ### Without compose
 ```
 Build: docker build -t tc-vue . 
-Run: docker run -it -p 8000:80 --rm dockerize-vue
+Run: docker run -it -p 8000:80 --rm tc-vue
 ```
 
 ### With compose

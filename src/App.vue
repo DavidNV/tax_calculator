@@ -1,18 +1,14 @@
 <template>
   <div id="app">
     <main>
+      <p> Aloha </p>
     </main>
   </div>
 </template>
 
 <script>
 export default {
-  name: "app",
-  components: {
-    Panel,
-    InputForm,
-    Result
-  }
+  name: "app"
 };
 </script>
 
